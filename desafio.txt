@@ -1,0 +1,8 @@
+Dado uma faixa de números (1 a N), o programa deve retornar a lista de números de conforme as regras:
+Números divisíveis por 3 devem aparecer como 'Fizz' ao invés do número;
+Números divisíveis por 5 devem aparecer como 'Buzz' ao invés do número;
+Números divisíveis por 3 e 5 devem aparecer como 'FizzBuzz' ao invés do número.
+
+
+https://www.alura.com.br/curso-online-php-oo-classes-metodos-atributos
+https://www.alura.com.br/curso-online-php-arrays-strings-funcoes
