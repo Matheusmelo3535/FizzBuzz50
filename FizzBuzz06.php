@@ -1,10 +1,10 @@
 <?php
-    // input no console
-    $inicio = readline("FizzBuzz: digite o valor inicial: ");
-    $fim = readline("Digite o valor final:  ");
-    
-    for($i = $inicio; $i <= $fim; $i++) {
-        if($i % 3 == 0 && $i % 5 == 0){
+
+    $inicio = mt_rand(1, 50);
+    $fim = mt_rand(51, 100);
+
+    for($i = $inicio; $i <= $fim; $i ++) {
+        if($i % 3 == 0 && $i % 5 == 0) {
             echo "FizzBuzz".PHP_EOL;
         }
         elseif($i % 3 == 0){
@@ -18,4 +18,7 @@
         }
     }
 
+
 ?>
+
+
