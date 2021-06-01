@@ -6,25 +6,36 @@
 $inicio = 1;
 $fim = 50;
 $retorno = [];
-
+$fizzArray = [];
+$buzzArray = [];
+$fizzBuzzArray = [];
+$normal = [];
 
 for($i = $inicio; $i <= $fim; $i++) {
     if($i % 3 == 0 && $i % 5 == 0) {
-        array_push($retorno,"FizzBuzz");
+        array_push($fizzBuzzArray, $i);
     }
     elseif($i % 3 == 0) {
-        array_push($retorno, "Fizz");
+        array_push($fizzArray, $i);
     }
     elseif($i % 5 == 0) {
-        array_push($retorno, "Buzz");
+        array_push($buzzArray, $i);
     }
     else{
-        array_push($retorno, $i);
+        array_push($normal, $i);
     }
 }
 
-foreach($retorno as $chave => $valor) {
-    echo "Indice: $chave - valor: $valor".PHP_EOL;
+$retorno = ['FizzBuzz' => $fizzBuzzArray, 'Fizz' => $fizzArray, 'Buzz' => $buzzArray, 'Normal' => $normal];
+
+foreach ($retorno as $key => $array) {
+    echo "$key = ";
+   foreach($array as $value) {
+       echo "$value ";
+   }
+   echo "\n";
+   PHP_EOL;
+   
 }
 
 ?>
